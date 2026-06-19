@@ -1,12 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" role="img" aria-labelledby="title desc">
   <title id="title">BBB Accredited Business placeholder badge</title>
   <desc id="desc">Placeholder for the official Better Business Bureau accredited business logo.</desc>
-  <rect width="280" height="120" rx="8" fill="#ffffff"/>
-  <rect x="2" y="2" width="276" height="116" rx="7" fill="none" stroke="#0b4f6c" stroke-width="4"/>
-  <g fill="#0b4f6c">
-    <path d="M30 25h48c15 0 24 7 24 19 0 8-4 14-12 17 10 3 15 10 15 19 0 13-10 21-27 21H30V25Zm24 17v12h18c5 0 8-2 8-6s-3-6-8-6H54Zm0 28v14h20c6 0 9-2 9-7s-3-7-9-7H54Z"/>
-    <text x="120" y="58" font-family="Arial, sans-serif" font-size="27" font-weight="700">BBB</text>
-    <text x="120" y="83" font-family="Arial, sans-serif" font-size="14" font-weight="700">ACCREDITED BUSINESS</text>
-  </g>
-  <text x="120" y="101" fill="#45616e" font-family="Arial, sans-serif" font-size="10">OFFICIAL LOGO PLACEHOLDER</text>
+  <rect x="2" y="2" width="276" height="116" rx="10" fill="#f8fcfd" stroke="#0b4f6c" stroke-width="4"/>
+  <circle cx="58" cy="60" r="37" fill="#0b4f6c"/>
+  <text x="58" y="70" fill="#ffffff" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">A+</text>
+  <text x="112" y="54" fill="#0b4f6c" font-family="Arial, sans-serif" font-size="32" font-weight="700">BBB</text>
+  <text x="112" y="75" fill="#0b4f6c" font-family="Arial, sans-serif" font-size="13" font-weight="700">ACCREDITED BUSINESS</text>
+  <text x="112" y="94" fill="#45616e" font-family="Arial, sans-serif" font-size="9">OFFICIAL LOGO PLACEHOLDER</text>
 </svg>

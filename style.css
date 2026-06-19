@@ -81,15 +81,15 @@ h1 span, h2 span { color: var(--green-bright); }
 .trust-item strong { font-size: 13px; font-weight: 700; }
 .trust-item p span { margin-top: 4px; color: var(--muted); font-size: 11px; }
 
-.bbb-trust { padding: 28px 0; background: #eaf2f5; border-bottom: 1px solid #cad9df; }
-.bbb-inner { display: grid; grid-template-columns: 230px 1fr minmax(260px, 390px); gap: 36px; align-items: center; }
-.bbb-logo-placeholder { display: flex; align-items: center; justify-content: center; padding: 8px; background: white; border-radius: 8px; box-shadow: 0 8px 24px rgba(11,79,108,.08); }
-.bbb-logo-placeholder img { width: 100%; height: auto; }
+.bbb-trust { padding: 34px 0; background: #eaf2f5; border-bottom: 1px solid #cad9df; }
+.bbb-inner { display: grid; grid-template-columns: 210px 1fr; gap: 34px; align-items: center; max-width: 850px; padding: 24px 30px; background: white; border: 1px solid #cad9df; border-radius: 10px; box-shadow: 0 12px 34px rgba(11,79,108,.1); }
+.bbb-logo-placeholder { display: flex; width: 210px; max-width: 100%; align-items: center; justify-content: center; }
+.bbb-logo-placeholder img { display: block; width: 210px; max-width: 100%; height: auto; }
 .bbb-copy .eyebrow { margin-bottom: 5px; color: #0b4f6c; }
 .bbb-copy h2 { color: #123746; font-size: clamp(24px, 2.4vw, 34px); letter-spacing: -.035em; }
-.bbb-copy > p:last-child { margin: 6px 0 0; color: #34505c; font-size: 16px; }
+.bbb-rating { margin: 6px 0 0; color: #34505c; font-size: 16px; }
 .bbb-copy > p strong { color: #0b4f6c; font-size: 22px; }
-.bbb-note { margin: 0; padding-left: 28px; border-left: 1px solid #bdd0d8; color: #4a626c; font-size: 14px; }
+.bbb-note { margin: 10px 0 0; color: #4a626c; font-size: 13px; }
 
 .hydroseeding-feature { padding: 110px 0; overflow: hidden; background: var(--paper); }
 .hydroseeding-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 8%; align-items: center; }
@@ -234,7 +234,7 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
   .trust-item:nth-child(2) { border-right: 0; }
   .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .bbb-inner { grid-template-columns: 190px 1fr; gap: 25px; }
-  .bbb-note { grid-column: 1 / -1; padding: 15px 0 0; border-top: 1px solid #bdd0d8; border-left: 0; }
+  .bbb-logo-placeholder, .bbb-logo-placeholder img { width: 190px; }
   .hydroseeding-grid { grid-template-columns: 1fr 1fr; gap: 45px; }
   .hydroseeding-image { min-height: 520px; }
   .service-grid { grid-template-columns: 1fr 1fr; }
@@ -269,9 +269,8 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
   .trust-grid { grid-template-columns: 1fr; }
   .trust-item, .trust-item:first-child { min-height: 86px; padding: 17px 4px; border: 0; border-bottom: 1px solid var(--line); }
   .bbb-trust { padding: 32px 0; }
-  .bbb-inner { grid-template-columns: 1fr; gap: 18px; text-align: center; }
-  .bbb-logo-placeholder { width: min(230px, 100%); margin-inline: auto; }
-  .bbb-note { grid-column: auto; padding: 16px 0 0; }
+  .bbb-inner { grid-template-columns: 1fr; gap: 18px; padding: 24px 20px; text-align: center; }
+  .bbb-logo-placeholder, .bbb-logo-placeholder img { width: min(210px, 100%); margin-inline: auto; }
   .hydroseeding-feature { padding: 78px 0; }
   .hydroseeding-grid { grid-template-columns: 1fr; gap: 62px; }
   .hydroseeding-image { min-height: 380px; }
