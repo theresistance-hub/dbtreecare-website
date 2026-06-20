@@ -90,6 +90,13 @@ h1 span, h2 span { color: var(--green-bright); }
 .bbb-copy > p strong { color: #0b4f6c; font-size: 22px; }
 .bbb-note { margin: 10px 0 0; color: #4a626c; font-size: 13px; }
 
+.stats-band { background: var(--forest); color: white; border-bottom: 1px solid rgba(255,255,255,.1); }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat-item { min-height: 145px; display: flex; flex-direction: column; justify-content: center; padding: 28px; border-right: 1px solid rgba(255,255,255,.12); }
+.stat-item:first-child { border-left: 1px solid rgba(255,255,255,.12); }
+.stat-item strong { color: var(--green-bright); font-size: clamp(28px, 3vw, 42px); font-weight: 800; line-height: 1; }
+.stat-item span { max-width: 190px; margin-top: 9px; color: #c3cec6; font-size: 11px; font-weight: 700; letter-spacing: .08em; line-height: 1.45; text-transform: uppercase; }
+
 .hydroseeding-feature { padding: 110px 0; overflow: hidden; background: var(--paper); }
 .hydroseeding-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 8%; align-items: center; }
 .hydroseeding-image { position: relative; min-height: 590px; }
@@ -181,6 +188,21 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
 .sector-line { margin: 25px 0 0; color: #3c473e; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .sector-line span { margin: 0 12px; color: var(--green); }
 
+.why-choose { background: var(--forest); color: white; }
+.why-choose-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 9%; align-items: center; }
+.why-choose-copy > p:last-child { max-width: 480px; margin: 25px 0 0; color: #b9c5bc; }
+.why-choose-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.why-choose-list li { position: relative; padding: 19px 18px 19px 48px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.055); font-size: 14px; font-weight: 700; }
+.why-choose-list li::before { position: absolute; top: 17px; left: 18px; color: var(--green-bright); content: '\2713'; font-size: 18px; font-weight: 900; }
+.why-choose-list li:last-child { grid-column: 1 / -1; }
+.why-choose-list li span { margin-inline: 7px; color: var(--green-bright); }
+
+.service-areas { background: var(--cream); }
+.location-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.location-grid span { position: relative; padding: 19px 22px 19px 45px; border: 1px solid var(--line); background: white; font-size: 14px; font-weight: 800; }
+.location-grid span::before { position: absolute; top: 50%; left: 20px; width: 9px; height: 9px; border: 3px solid var(--green); border-radius: 50% 50% 50% 0; content: ''; transform: translateY(-60%) rotate(-45deg); }
+.service-area-copy { max-width: 1000px; margin: 35px 0 0; color: var(--muted); font-size: 15px; line-height: 1.85; }
+
 .contact { padding: 105px 0; overflow: hidden; background: var(--forest); color: white; }
 .contact-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-bottom: 45px; }
 .contact-intro .eyebrow { grid-column: 1 / -1; margin-bottom: -55px; }
@@ -243,6 +265,10 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
   .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .bbb-inner { grid-template-columns: 190px 1fr; gap: 25px; }
   .bbb-logo-placeholder, .bbb-logo-placeholder img { width: 190px; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat-item:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.12); }
+  .why-choose-grid { grid-template-columns: 1fr; gap: 45px; }
+  .location-grid { grid-template-columns: repeat(3, 1fr); }
   .hydroseeding-grid { grid-template-columns: 1fr 1fr; gap: 45px; }
   .hydroseeding-image { min-height: 520px; }
   .service-grid { grid-template-columns: 1fr 1fr; }
@@ -280,6 +306,9 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
   .bbb-trust { padding: 32px 0; }
   .bbb-inner { grid-template-columns: 1fr; gap: 18px; padding: 24px 20px; text-align: center; }
   .bbb-logo-placeholder, .bbb-logo-placeholder img { width: min(210px, 100%); margin-inline: auto; }
+  .stat-item { min-height: 125px; padding: 22px 16px; }
+  .stat-item:nth-child(odd) { border-left: 1px solid rgba(255,255,255,.12); }
+  .stat-item span { font-size: 9px; }
   .hydroseeding-feature { padding: 78px 0; }
   .hydroseeding-grid { grid-template-columns: 1fr; gap: 62px; }
   .hydroseeding-image { min-height: 380px; }
@@ -299,6 +328,11 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
   .about-grid { grid-template-columns: 1fr; gap: 70px; }
   .about-image { min-height: 490px; }
   .image-badge { right: -8px; bottom: -24px; }
+  .why-choose-list { grid-template-columns: 1fr; }
+  .why-choose-list li:last-child { grid-column: auto; }
+  .location-grid { grid-template-columns: 1fr 1fr; }
+  .location-grid span { padding: 16px 12px 16px 36px; font-size: 12px; }
+  .location-grid span::before { left: 14px; }
   .contact-intro .eyebrow { grid-column: auto; margin-bottom: -9px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .quote-form { padding: 26px 20px; }
