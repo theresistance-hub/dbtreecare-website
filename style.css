@@ -165,7 +165,7 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
 .about { background: var(--paper); }
 .about-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 9%; align-items: center; }
 .about-image { position: relative; min-height: 590px; }
-.about-image > img { position: absolute; inset: 0; height: 100%; object-position: 50% 48%; }
+.about-image > img { position: absolute; inset: 0; height: 100%; object-fit: contain; object-position: center; background: #edf0eb; }
 .about-image::after { position: absolute; inset: 18px -18px -18px 18px; z-index: -1; border: 2px solid #d5dfcb; content: ''; }
 .image-badge { position: absolute; right: -35px; bottom: 35px; max-width: 230px; padding: 23px; background: var(--green); color: var(--forest); }
 .image-badge strong, .image-badge span { display: block; }
