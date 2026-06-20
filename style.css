@@ -134,6 +134,10 @@ h2 { font-size: clamp(36px, 4.5vw, 58px); font-weight: 700; letter-spacing: -.05
 .dark-card { background: var(--forest); color: white; border-color: var(--forest); }
 .dark-card .card-body p { color: #bdc9c0; }
 .dark-card .card-body a { color: var(--green-bright); }
+.firesmart-card .card-image { position: relative; }
+.firesmart-badge { position: absolute; top: 14px; right: 14px; z-index: 2; padding: 7px 10px; border-radius: 3px; background: var(--green); color: var(--forest); font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 5px 15px rgba(0,0,0,.2); }
+.photo-credit { position: absolute; bottom: 7px; left: 8px; z-index: 2; padding: 3px 6px; border-radius: 2px; background: rgba(6,16,10,.72); color: rgba(255,255,255,.82) !important; font-size: 8px !important; font-weight: 500 !important; letter-spacing: .02em !important; text-transform: none !important; }
+.photo-credit:hover { color: white !important; }
 .service-symbol { display: grid; height: 250px; place-items: center; }
 .service-symbol svg { width: 72px; fill: none; stroke: #52771f; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.2; }
 .dark-card .service-symbol svg { stroke: var(--green-bright); }
